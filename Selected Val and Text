@@ -1,0 +1,20 @@
+Select:
+
+ <select id="selectValue">
+                    <option value="0">Select From List</option>
+                    <option value="1">Volvo</option>
+                    <option value="2">Saab</option>
+                    <option value="3">Mercedes</option>
+                    <option value="4">Audi</option>
+ </select>
+ 
+  $('#selectValue').on('change', function() {
+        var selectVal  = $("#selectValue").val();
+        var selectText = $( "#selectValue option:selected" ).text();
+        $("#selectresult").html(selectVal + " -  "+  selectText);
+   }); 
+   
+   
+   Adress:
+   
+   http://jsfiddle.net/Behseini/eEMX6/
