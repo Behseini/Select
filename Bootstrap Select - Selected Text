@@ -7,3 +7,16 @@
     <option value="3">Mercedes</option>
     <option value="4">Audi</option>
 </select>
+
+
+$('.selectpicker').selectpicker();
+$('#selopt').on('change', function() {
+        var selectText = $( "#selopt option:selected" ).text();
+        alert(selectText);
+}); 
+
+
+
+Address:
+
+http://www.bootply.com/8aqzzmkVIr
