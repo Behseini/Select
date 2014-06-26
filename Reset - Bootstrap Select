@@ -1,0 +1,22 @@
+
+
+<select class="selectpicker" id="selopt">
+    <option value="0">Select From List</option>
+    <option value="1">Volvo</option>
+    <option value="2">Saab</option>
+    <option value="3">Mercedes</option>
+    <option value="4">Audi</option>
+</select>
+<br>
+<button id="resetForm" class="btn btn-success">Reset</button>
+
+
+$('.selectpicker').selectpicker();
+$('#resetForm').on("click", function(){
+  $("#selopt").selectpicker('deselectAll');
+});
+
+Address
+
+
+http://www.bootply.com/qKbWKCCHiK
