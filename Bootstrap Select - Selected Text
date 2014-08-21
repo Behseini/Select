@@ -1,6 +1,21 @@
+// two way to select text 
+$( "#element :selected" ).text(); or $( "#element option:selected" ).text();
+
+$( "#newselopt :selected" ).text();
+$( "#selopt option:selected" ).text();
+
+
 
 
 <select class="selectpicker" id="selopt">
+    <option value="0">Select From List</option>
+    <option value="1">Volvo</option>
+    <option value="2">Saab</option>
+    <option value="3">Mercedes</option>
+    <option value="4">Audi</option>
+</select>
+<br>
+<select class="selectpicker" id="newselopt">
     <option value="0">Select From List</option>
     <option value="1">Volvo</option>
     <option value="2">Saab</option>
@@ -13,6 +28,11 @@ $('.selectpicker').selectpicker();
 $('#selopt').on('change', function() {
         var selectText = $( "#selopt option:selected" ).text();
         alert(selectText);
+}); 
+
+$('#newselopt').on('change', function() {
+  var newselectText = $( "#newselopt :selected" ).text();
+        alert(newselectText);
 }); 
 
 
